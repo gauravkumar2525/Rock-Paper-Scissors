@@ -30,6 +30,7 @@ function playGame(playerChoice) {
     
     document.getElementById('selection-screen').classList.add('hidden');
     document.getElementById('result-screen').classList.remove('hidden');
+    document.getElementById('result-text').textContent="";
     
     const playerHand = document.getElementById('player-hand');
     const computerHand = document.getElementById('computer-hand');
