@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Importing google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <div class="game-box">
+        <h1>Rock Paper Scissors</h1>
+        
+        <div class="selection-screen" id="selection-screen">
+          <h2>Select your Weapon</h2>
+          <div class="choices">
+            <div class="choice" data-choice="rock">
+              <img src='./images/rock.png' alt="Rock">
+            </div>
+            <div class="choice" data-choice="paper">
+              <img src="./images/paper.png" alt="Paper">
+            </div>
+            <div class="choice" data-choice="scissors">
+              <img src="./images/scissors.png" alt="Scissors">
+            </div>
+          </div>
+        </div>
+
+        <div class="result-screen hidden" id="result-screen">
+          <div class="vs-area">
+            <div class="player-section">
+              <label>Player</label>
+              <img class="hand" id="player-hand" src="" alt="Player choice">
+            </div>
+            <div class="vs">v/s</div>
+            <div class="computer-section">
+              <label>Computer</label>
+              <img class="hand" id="computer-hand" src="" alt="Computer choice">
+            </div>
+          </div>
+          <p id="result-text"></p>
+          <button id="play-again">Play Again</button>
+        </div>
+
+        <div class="scoreboard">
+          <div>Won: <span id="wins">0</span></div>
+          <div>Lost: <span id="losses">0</span></div>
+          <div>Draw: <span id="draws">0</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
