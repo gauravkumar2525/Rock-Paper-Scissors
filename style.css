@@ -12,8 +12,8 @@ body {
   justify-content: center;
   align-items: center;
   background-image:
-    url("https://i.pinimg.com/736x/75/eb/80/75eb8093ea6cd35e299af2af7fe3e166.jpg"),
-    url("https://static.vecteezy.com/system/resources/previews/000/693/105/non_2x/cartoon-rock-paper-scissors-vector-characters.jpg");
+    url('./images/bg_img1.jpg'),
+    url('./images/bg_img2.jpg');
   background-position: left center, right center;
   background-size: 50% 100%, 50% 100%;
   background-repeat: no-repeat, no-repeat;
@@ -37,6 +37,7 @@ body {
   text-align: center;
   padding: 2.5rem 2rem;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border: 3px solid black;
 }
 
 h1 {
@@ -206,12 +207,29 @@ h1 {
   color: white;
 }
 
-/* 📱 RESPONSIVE DESIGN */
-@media (max-width:1000px){
+@media (max-width:1200px){
     body {
-        background-image: url("https://static.vecteezy.com/system/resources/previews/000/693/105/non_2x/cartoon-rock-paper-scissors-vector-characters.jpg");
+        background-image: url("./images/bg_img2.jpg");
         background-position: center;
         background-size: cover;
+    }
+}
+
+@media (max-width:960px){
+    body {
+        background-image: url("./images/bg_img1.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (max-width:715px){
+    body {
+        background-image: 
+        url("./images/bg_img1.jpg"),
+        url('./images/bg_img2.jpg');
+        background-position: top , bottom;
+        background-size: 500px , 450px;
     }
 }
 
