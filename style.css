@@ -229,7 +229,7 @@ h1 {
         url("./images/bg_img1.jpg"),
         url('./images/bg_img2.jpg');
         background-position: top , bottom;
-        background-size: 500px , 450px;
+        background-size: 60% , 60%;
     }
 }
 
